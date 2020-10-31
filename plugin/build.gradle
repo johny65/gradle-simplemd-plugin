@@ -1,0 +1,24 @@
+plugins {
+    id 'java-gradle-plugin'
+}
+
+description = 'Simple MD to HTML'
+version = '0.1'
+group = 'com.github.johny65'
+
+sourceCompatibility = JavaVersion.VERSION_11
+
+repositories {
+}
+
+dependencies {
+}
+
+gradlePlugin {
+    plugins {
+        simplemd {
+            id = 'com.github.johny65.simplemd'
+            implementationClass = 'com.github.johny65.simplemd.GradleSimpleMDPlugin'
+        }
+    }
+}

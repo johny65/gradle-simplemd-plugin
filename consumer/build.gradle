@@ -1,0 +1,9 @@
+plugins {
+    id 'java-library'
+    id 'com.github.johny65.simplemd'
+}
+
+md2html {
+    sources = '../README.md'
+    outputDir = '.'
+}
