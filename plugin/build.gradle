@@ -5,7 +5,7 @@ plugins {
 }
 
 //description = 'Simple MD to HTML'
-version = '0.1'
+version = '0.2'
 group = 'com.github.johny65'
 
 sourceCompatibility = JavaVersion.VERSION_11
@@ -24,7 +24,7 @@ gradlePlugin {
         simplemd {
             id = 'com.github.johny65.simplemd'
             displayName = 'SimpleMD'
-            description = 'Simple plugin to convert Markdown files to HTML'
+            description = 'Simple plugin to convert Markdown files to HTML during the build process.'
             implementationClass = 'com.github.johny65.simplemd.GradleSimpleMDPlugin'
         }
     }

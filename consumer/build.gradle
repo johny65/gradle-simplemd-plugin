@@ -3,7 +3,10 @@ plugins {
     id 'com.github.johny65.simplemd'
 }
 
-md2html {
-    sources = '../README.md'
-    outputDir = '.'
+markdownConvertion {
+    source = '..'
+    sources = ['.']
+    outputDir = 'output'
 }
+
+tasks.compileJava.dependsOn md2html
